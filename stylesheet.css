@@ -1,0 +1,426 @@
+body {
+    margin: 0px;
+    font-family: 'Birdseye', sans-serif;
+}
+
+.border {
+    border-bottom: 0.5px solid #DEDEDE;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 30;
+}
+
+.border2 {
+    border-bottom: 0.5px solid #DEDEDE;
+    width: 100%;
+    padding-bottom: 30;
+}
+
+h1 {
+    padding: 50px 0px 0px 0px;
+    color: #626262;
+    font-size: 24px;
+    text-align: center;
+}
+
+h2 {
+    color: #626262;
+    font-size: 16px;
+}
+
+p {
+    color: #626262;
+    font-size: 13px;
+    letter-spacing: 0.7px;
+}
+
+.space {
+    height: 40px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all  0.3s ease;
+}
+
+a:hover {
+    color: #DEDEDE;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+
+/* MENU */
+
+.header-menu {
+    height: 70px;
+    padding: 20px 40px 0px 0px;
+    position: fixed;
+    right: 0;
+    width: 100%;
+    z-index: 10;
+    transition: 0.5s;
+}
+
+.header-menu ul {
+    text-align: right;
+}
+
+.header-menu li {
+    list-style: none;
+    display: inline;
+    padding: 12px 20px;
+    font-size: 13px;
+    letter-spacing: 0.7px;
+}
+
+.header-menu a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: all  0.3s ease;
+}
+
+.header-menu a:hover {
+    color: #DEDEDE;
+}
+
+.scroll-nav {
+    background-color: #ffffff;
+    padding: 0px 40px 0px 0px;
+    height: 55px;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    transition: 0.5s;
+}
+
+.scroll-nav a {
+    color: #626262;
+}
+
+
+
+
+/* 560px未満 */
+@media screen and (max-width: 559px) {
+
+    .header-menu ul {
+        text-align: center;
+    }
+
+    .header-menu li {
+        list-style: none;
+        display: inline;
+        padding: 10px 20px;
+        font-size: 11px;
+        letter-spacing: 0.7px;
+    }
+}
+
+
+/* TOP */
+
+.top-image {
+    background-image: url("Orange-Blue.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    box-sizing: border-box;
+}
+
+.top-image img {
+    max-width: 100%;
+    padding-left: 50px;
+    padding-bottom: 50px;
+}
+
+
+
+
+/* Profile */
+
+.profile {
+    text-align: center;
+}
+
+.profile img {
+    border-radius: 50%;
+}
+
+.profile-text {
+    padding: 0 30px;
+}
+
+.profile h2 , .profile p {
+    padding-top: 20px;
+}
+
+.profile i {
+    font-size: 25px;
+    padding-top: 20px;
+    color: #7F8594;
+}
+
+
+/* 560px未満 */
+@media screen and (max-width: 959px) {
+
+    .profile .container {
+        padding: 30px 5%;
+    }
+}
+
+@media screen and (min-width: 960px) { 
+    .profile .container {
+        padding: 40px  25%;
+        display: flex;
+    }
+}
+    
+
+
+
+/* Carrier */
+
+.carrier {
+    background-color: #f2f2f2;
+}
+
+.carrier .container {
+    padding: 30px 5%;
+}
+
+.date1 {
+    font-weight: bold;
+    background: linear-gradient(transparent 50%, #FEE96C 50%);
+}
+
+.date2 {
+    font-weight: bold;
+
+}
+
+.underline {
+    background: linear-gradient(transparent 80%, #FEE96C 50%);
+}
+
+
+/* Skills */
+
+.skills .container {
+    padding: 40px 5%;
+}
+
+.skills p {
+    font-weight: bold;
+}
+
+.skill-contents {
+    display: flex;
+}
+
+.skill-name {
+    width: 30%;
+}
+
+/* .skill-bar {
+    position: relative;
+    background-color: #EDBF90;
+    height: 30px;
+    width: 70%;
+    border-radius: 5px;
+    text-align: right;
+}
+
+.skill-bar a {
+    color: #626262;
+    font-size: 15px;
+    letter-spacing: 0.7px;
+}
+
+.ok-bar {
+    background-color: #8CBFDE;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.skill-percent {
+    position: absolute;
+    top: 50%;
+    left: 97%;
+    transform: translate(-50%, -50%);
+}
+
+.xd {
+    width: 90%;
+}
+
+.ps {
+    width: 60%;
+}
+
+.ir {
+    width: 50%;
+}
+
+.hc {
+    width: 50%;
+}
+
+.jq {
+    width: 30%;
+} */
+
+
+/* 560px未満 */
+@media screen and (max-width: 959px) {
+
+    .skill-percent {
+        position: absolute;
+        top: 50%;
+        left: 93%;
+        transform: translate(-50%, -50%);
+    }
+
+}
+
+
+/* WORKS */
+
+.work {
+    background-color: #f2f2f2;
+}
+
+.work .container {
+    padding: 40px 5%;
+}
+
+.portfolio {
+    display: flex;
+}
+
+.site-image {
+    width: 50%;
+    text-align: center;
+}
+
+.site-image img {
+    max-width: 100%;
+}
+
+.site-text {
+    padding-left: 30px;
+    width: 50%;
+}
+
+.site-name {
+    font-weight: bold;
+    background: linear-gradient(transparent 50%, #FEE96C 50%);
+}
+
+/* 960px未満 */
+@media screen and (max-width: 959px) {
+    .portfolio {
+        display: block;
+    }
+
+    .site-image {
+        width: 100%;
+        text-align: center;
+    }
+
+    .site-text {
+        padding-left: 0px;
+        padding-top: 20px;
+        width: 100%;
+    }
+}
+
+/* footer */
+
+.footer {
+    background-color: #ffffff;
+    height: 150px;
+}
+
+.footer-menu {
+    padding: 30px;
+}
+
+.footer-menu ul {
+    text-align: center;
+    padding-inline-start: 0px;
+    
+}
+
+.footer-menu li {
+    list-style: none;
+    display: inline;
+    margin: auto;
+    padding: 10px 50px;
+    font-size: 12px;
+    letter-spacing: 0.7px;
+}
+
+.footer-menu a {
+    color: #626262;
+    font-weight: bold;
+    transition: all  0.3s ease;
+}
+
+a:hover {
+    color: #DEDEDE;
+}
+
+/* 960px未満 */
+@media screen and (max-width: 959px) {
+
+    .footer-menu li {
+        list-style: none;
+        display: inline;
+        padding: 12px 20px;
+        font-size: 11px;
+        letter-spacing: 0.7px;
+    }
+}
+
+
+/* PageTopへ戻るボタン */
+
+#page_top{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    right: 15px;
+    bottom: 0;
+    background: #FEE96C;
+    opacity: 0.7;
+    border-radius: 50%;
+  }
+  #page_top a{
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-decoration: none;
+  }
+  #page_top a::before{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    content: '\f106';
+    font-size: 25px;
+    color: #626262;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    top: -5px;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    text-align: center;
+  }
+
+
