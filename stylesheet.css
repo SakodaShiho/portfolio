@@ -102,22 +102,42 @@ html {
 }
 
 
-
-
 /* 560px未満 */
 @media screen and (max-width: 559px) {
 
+    .header-menu {
+        height: auto;
+        padding: 0px 0px 0px 0px;
+        position: fixed;
+        right: 0;
+        width: 100%;
+        z-index: 10;
+        transition: 0.5s;
+    }
+
     .header-menu ul {
         text-align: center;
+        padding: 0px;
     }
 
     .header-menu li {
         list-style: none;
         display: inline;
-        padding: 10px 20px;
+        padding: 10px 12px;
         font-size: 11px;
         letter-spacing: 0.7px;
     }
+
+    .scroll-nav {
+        background-color: #ffffff;
+        padding: 0px 0px 0px 0px;
+        text-align: center;
+        height: 55px;
+        box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+        z-index: 10;
+        transition: 0.5s;
+    }
+    
 }
 
 
@@ -134,6 +154,17 @@ html {
     max-width: 100%;
     padding-left: 50px;
     padding-bottom: 50px;
+}
+
+/* 560px未満 */
+@media screen and (max-width: 559px) {
+
+    .top-image img {
+        width: 350px;
+        padding-left: 20px;
+        padding-bottom: 30px;
+    }
+
 }
 
 
@@ -377,10 +408,19 @@ a:hover {
 /* 960px未満 */
 @media screen and (max-width: 959px) {
 
+    .footer {
+        background-color: #ffffff;
+        height: 100px;
+    }
+
+    .footer-menu {
+        padding: 30px 0px;
+    }
+
     .footer-menu li {
         list-style: none;
         display: inline;
-        padding: 12px 20px;
+        padding: 10px 12px;
         font-size: 11px;
         letter-spacing: 0.7px;
     }
