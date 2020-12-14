@@ -190,8 +190,13 @@ html {
 
 .profile i {
     font-size: 25px;
-    padding-top: 20px;
-    color: #7F8594;
+    margin: 20px 10px 0px 0px;
+    color: #1DA1F2;
+}
+
+.sns {
+    width: 25px;
+    margin: 20px 10px 0px 10px;
 }
 
 
