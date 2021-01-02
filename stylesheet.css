@@ -356,6 +356,16 @@ html {
     background: linear-gradient(transparent 50%, #FEE96C 50%);
 }
 
+a .work-image {
+    transition: all 0.5s ease;
+}
+
+a:hover .work-image {
+    opacity: 0.5;
+    filter: alpha(opacity=70);
+}
+
+
 /* 960px未満 */
 @media screen and (max-width: 959px) {
     .portfolio {
