@@ -10,7 +10,6 @@
     <!-- JQuery読み込み -->
 
     <script src="js/jquery-2.1.4.min.js"></script>
-    <script src="https://unpkg.com/scrollreveal"></script>
     <script type="text/javascript" src="script.js"></script>
     <script type="text/javascript" src="js/skill.bars.jquery.js"></script>
 
@@ -302,59 +301,6 @@
         </div>
     </div>
 
-
-
-
-    <div class="container">
-        <div class="row">
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-        </div>
-        <div class="row">
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-        </div>
-        <div class="row">
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-        </div>
-        <div class="row">
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-        </div>
-        <div class="row">
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-        </div>
-        <div class="row">
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-        </div>
-        <div class="row">
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-        </div>
-        <div class="row">
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-        </div>
-        <div class="row">
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-        </div>
-    </div>
-
-
-
     <!-- footer -->
 
     <div class="footer">
@@ -374,6 +320,13 @@
     <!-- Page Topへ戻るボタン -->
     <div id="page_top"><a href="#"></a></div>
 
-
+<script src="https://unpkg.com/scrollreveal"></script>
+<script>
+    ScrollReveal().reveal('.portfolio', { 
+    duration: 1000, // アニメーションの完了にかかる時間
+    viewFactor: 0.2, // 0~1,どれくらい見えたら実行するか
+    reset: true   // 何回もアニメーション表示するか
+});
+</script>
 </body>
 </html>
