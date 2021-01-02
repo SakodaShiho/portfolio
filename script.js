@@ -65,3 +65,8 @@ window.addEventListener("scroll", function () {
       return false;
     });
   });
+
+  
+//workのscrollのエフェクト
+
+ScrollReveal().reveal('.box');
