@@ -6,29 +6,8 @@
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
-
-    <!-- JQuery読み込み -->
-
-    <script src="js/jquery-2.1.4.min.js"></script>
-    <script type="text/javascript" src="script.js"></script>
-    <script type="text/javascript" src="js/skill.bars.jquery.js"></script>
-
-
     <title>Shiho Sakoda</title>
 
-
-    <!-- skill-bar ライブラリ -->
-
-    <script>
-        $(document).ready(function(){
-            $('.skillbar').skillBars({
-                from: 0,
-                speed: 4000, 
-                interval: 100,
-                decimals: 0,
-            });
-        });
-    </script>
 
 </head>
 <body>
@@ -354,30 +333,36 @@
     <!-- Page Topへ戻るボタン -->
     <div id="page_top"><a href="#"></a></div>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<script>
-    $('.tab-content>div').hide();
-    $('.tab-content>div').first().slideDown();
-    $('.tab-buttons span').click(function(){
+
+    <!-- JQuery/JS読み込み -->
+
+    <script src="js/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="js/skill.bars.jquery.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script>
+        $('.tab-content>div').hide();
+        $('.tab-content>div').first().slideDown();
+        $('.tab-buttons span').click(function(){
         var thisclass=$(this).attr('class');
         $('#lamp').removeClass().addClass('#lamp').addClass(thisclass);
         $('.tab-content>div').each(function(){
             if($(this).hasClass(thisclass)){
-         $(this).fadeIn(800);
-      }
-      else{
-        $(this).hide();
-      }
-    });
-  });
-</script>
-<script src="https://unpkg.com/scrollreveal"></script>
-<script>
-    ScrollReveal().reveal('.portfolio', { 
-    duration: 1000, // アニメーションの完了にかかる時間
-    viewFactor: 0.2, // 0~1,どれくらい見えたら実行するか
-    reset: true   // 何回もアニメーション表示するか
-});
-</script>
+            $(this).fadeIn(800);
+            }
+            else{
+            $(this).hide();
+        }
+        });
+        });
+    </script>
+    <script>
+        ScrollReveal().reveal('.portfolio', { 
+        duration: 1000, // アニメーションの完了にかかる時間
+        viewFactor: 0.2, // 0~1,どれくらい見えたら実行するか
+        reset: true   // 何回もアニメーション表示するか
+        });
+    </script>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 </html>

@@ -1,6 +1,3 @@
-
-
-
 // menu スクロールしたら白くなる
 
 window.addEventListener("scroll", function () {
@@ -38,6 +35,19 @@ $(function(){
     })
   })
 })
+
+
+// Skill-bars
+
+$(document).ready(function(){
+  $('.skillbar').skillBars({
+      from: 0,
+      speed: 4000, 
+      interval: 100,
+      decimals: 0,
+  });
+});
+
 
 //Page Scroll TOP
 
