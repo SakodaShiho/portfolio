@@ -384,6 +384,10 @@ html {
 -moz-transition: all .3s ease-in;
 }
 
+.content2 img {
+    width: 400px;
+    margin: 0px;
+}
 
 .work {
     background-color: #f2f2f2;
