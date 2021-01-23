@@ -1,6 +1,6 @@
 body {
     margin: 0px;
-    font-family: 'Birdseye', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
 }
 
 .border {
@@ -57,7 +57,7 @@ html {
 /* MENU */
 
 .header-menu {
-    height: 70px;
+    height: auto;
     padding: 20px 40px 0px 0px;
     position: fixed;
     right: 0;
@@ -73,7 +73,7 @@ html {
 .header-menu li {
     list-style: none;
     display: inline;
-    padding: 12px 20px;
+    margin: 12px 20px;
     font-size: 13px;
     letter-spacing: 0.7px;
 }
@@ -91,7 +91,7 @@ html {
 .scroll-nav {
     background-color: #ffffff;
     padding: 0px 40px 0px 0px;
-    height: 55px;
+    height: 50px;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
     z-index: 10;
     transition: 0.5s;
