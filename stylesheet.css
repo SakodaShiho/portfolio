@@ -384,10 +384,30 @@ html {
 -moz-transition: all .3s ease-in;
 }
 
-.content2 img {
-    width: 400px;
-    margin: 0px;
+.content2{
+	display: flex;
 }
+.content2 img {
+    width: 300px;
+    height: auto;
+    border-radius: 7px;
+}
+.design{
+    margin:10px 5px 10px 5px;
+}
+.design h2{
+    font-size: 10px;
+    text-align: center;
+}
+.content2 img:hover{
+	opacity: .7;
+
+}
+
+
+
+
+
 
 .work {
     background-color: #f2f2f2;
@@ -446,6 +466,33 @@ a:hover .work-image {
         padding-top: 20px;
         width: 100%;
     }
+}
+
+
+
+
+
+/*幅768px以上に適用されるCSS（タブレットサイズ以上・幅990px以上にも適用される）*/
+@media screen and (min-width:768px){
+	article{
+		height: 2600px;
+	}
+	section{
+		width: 28%;
+	}
+
+}
+/*幅990px以上に適用されるCSS（PCサイズ以上・幅768px以上のCSSが干渉する）*/
+@media screen and (min-width:990px){
+		article{
+			max-width: 1200px;
+			margin:0 auto;
+		height: 2000px;
+	}
+	section{
+		width: 21.5%;
+	}
+
 }
 
 /* footer */
